@@ -89,7 +89,7 @@
 }
 
 .cardparagraph,
-li {
+.cardparagraph li {
   font-size: 20px;
   font-weight: 600;
   color: var(--gray-color-300);

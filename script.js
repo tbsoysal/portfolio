@@ -20,9 +20,14 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 
 
-// scroll to sections without changing url (with #)
-function scrollToSection(id) {
-  const section = document.getElementById(id);
-  section.scrollIntoView({ behavior: 'smooth' });
-}
-
+// scroll to sections
+document.querySelectorAll('.scroll-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = link.dataset.target;
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});

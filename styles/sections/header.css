@@ -51,7 +51,17 @@ header {
   list-style: none;
 }
 
-.header__menu li a:hover {
+.header__menu li button {
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.header__menu li button:hover {
   color: var(--gray-color-500);
 }
 
