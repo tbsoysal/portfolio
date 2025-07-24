@@ -22,10 +22,6 @@
   font-family: "Inter Tight", sans-serif;
 }
 
-.activeHeading {
-  color: black !important;
-}
-
 html {
   scroll-behavior: smooth;
 }
