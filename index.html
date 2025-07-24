@@ -14,11 +14,12 @@
                 <a href="index.html">TAHABERK SOYSAL</a>
             </div>
             <ul class="header__menu">
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a onclick="scrollToSection('work')">WORK</a></li>
+                <li><a onclick="scrollToSection('about')">ABOUT</a></li>
+                <li><a onclick="scrollToSection('skills')">SKILLS</a></li>
             </ul>
-            <div class="header__email">
-                <a href="mailto:berksysl.g@gmail.com" class="link">BERKSYSL.G@GMAIL.COM</a>
+            <div class="header__cv">
+                <a href="./assets/cv.pdf" download="Tahaberk_Soysal-CV.pdf" class="link">DOWNLOAD CV</a>
             </div>
         </div>
     </header>
@@ -26,13 +27,15 @@
     <!--Hero Section-->
     <section>
         <div class="hero">
-            <img src="./assets/images/profilepicture.webp" loading="lazy" alt="Meryem Demir Profile Picture">
+            <div class="profilepicture">
+              <img src="./assets/images/profilepicture.webp" loading="lazy" alt="Tahaberk Soysal Profile Picture">
+            </div>
             <div class="hero__userinfo">
-                <h1>Front-end<br>Developer</h1>
+                <h1>Front-end Developer</h1>
                 <p class="paragraph-1">I'm a Frontend Developer with over 4 years of experience, building responsive and user-friendly web applications.</p>
                 <p class="paragraph-2">I focus on creating seamless user experiences through clean code, modern design principles, and continuous learning.</p>
-                <div class="hero__email">
-                    <a href="mailto:berksysl.g@gmail.com" class="link">BERKSYSL.G@GMAIL.COM</a>
+                <div class="hero__cv">
+                  <a href="./assets/cv.pdf" download="Tahaberk_Soysal-CV.pdf" class="link">DOWNLOAD CV</a>
                 </div>
             </div>
         </div>
@@ -47,9 +50,9 @@
     </figure>
     </section>
     <!--Work Section-->
-    <section id="work">
+    <section class="section" id="work">
         <div class="worksection">
-            <h2>WORK</h2>
+            <h1>WORK</h1>
             <div class="worksection__cards">
                 <div class="card">
                     <a class="mobilelinks" href="https://tbsoysal.github.io/real-estate-landing-page/">
@@ -81,24 +84,50 @@
                     </div>
                     </a>
                 </div>
+                <div class="card cardlast">
+                    <a class="mobilelinks" href="https://tbsoysal.github.io/resume-builder">
+                    <img src="./assets/images/project3.webp" loading="lazy" alt="Project 2 preview">
+                    <p class="mobilenames">Resume Builder Web App</p>
+                    <div class="hovercontainer">
+                        <div class="hovercontainer__content">
+                            <div>
+                                <p class="cardname">Resume Builder Web App</p>
+                                <p class="cardparagraph">I built a simple and modern resume (CV) builder inspired by flowcv.com.</p>
+                                <p class="cardparagraph">✨ Features include:</p>
+                                <ul class="cardcontentlist">
+                                  <li>Easy-to-use resume creation with a clean template</li>
+                                  <li>Live preview while editing</li>
+                                  <li>Download as PDF</li>
+                                  <li>Responsive and fast with React + Vite</li>
+                                </ul>
+                            </div>
+                        <a href="https://tbsoysal.github.io/resume-builder" class="link">SEE LIVE</a>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <!-- About Section -->
-    <section id="about">
+    <section class="section" id="about">
         <div class="about">
             <h1>About</h1>
             <div class="about__paragraphContainer">
                 <h3>Coding Responsive and User-Centered Web Interfaces.</h3>
-                <p>I'm a Frontend Developer with over 4 years of experience, focused on creating user-centered web and mobile interfaces. I specialize in developing responsive designs, optimizing user flows, and turning wireframes and prototypes into fully functional products. By leveraging user research and testing, I deliver smooth, engaging, and accessible digital experiences.</p>
+                <div class='about__paragraphLines'>
+                  <p>Hi, I’m Tahaberk — a self-taught frontend developer focused on building clean, responsive, and user-friendly web interfaces using HTML, CSS, JavaScript, and React.</p>
+                  <p>I enjoy learning by doing and love turning ideas into functional, accessible designs. I’m comfortable using tools like Figma, Git, and modern development workflows.</p>
+                  <p>I speak Turkish (native), English (advanced), and I’m learning Russian. I'm currently looking for a remote opportunity where I can grow as a developer and contribute to meaningful work.</p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Course Section -->
-     <section>
-        <div class="course">
+    <!-- Skills Section -->
+     <section class="section" id="skills">
+        <div class="skills">
             <h1>Frontend Skills</h1>
-            <div class="course__paragraphContainer">
+            <div class="skills__paragraphContainer">
                 <h3>Technologies I Work With</h3>
                 <div>
                     <p>I specialize in building modern, responsive, and user-friendly web applications. My main stack includes HTML5, CSS3, SCSS, JavaScript (ES6+), React, Next.js, Tailwind CSS, and TypeScript.</p>
@@ -123,5 +152,6 @@
             </div>
         </div>
       </footer>
+    <script src="./script.js" />
 </body>
 </html>

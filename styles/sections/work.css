@@ -6,182 +6,191 @@
 */
 
 .worksection {
-    max-width: 1400px;
-    margin-inline: auto;
-    padding: 96px 32px 48px 32px;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 96px 32px 48px 32px;
 }
 
 /* Cards Container */
 .worksection__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
-    position: relative;
-    border-radius: 40px;
-    overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
-h2 {
-    font-size: 108px;
-    line-height: 120px;
-    font-weight: 600;
-    margin-bottom: 96px;
+.worksection h1 {
+  font-size: 108px;
+  line-height: 120px;
+  font-weight: 600;
+  margin-bottom: 96px;
+  color: var(--gray-color-300);
+  transition: all 1s ease;
 }
 
-img {
-    max-width: 652px;
-    height: auto;
-    border-radius: 40px;
+.worksection img {
+  max-width: 652px;
+  height: auto;
+  border-radius: 40px;
 }
 
 /* Cards Hover Screen */
 .card:hover .hovercontainer {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .hovercontainer {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(20, 20, 20, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
-    -o-transition: opacity 0.3s ease, visibility 0.3s ease;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  -o-transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .hovercontainer__content {
-    padding: 48px;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  padding: 48px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .cardname {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--gray-color-100);
-    margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gray-color-100);
+  margin-bottom: 24px;
 }
 
-.cardparagraph {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--gray-color-300);
+.cardparagraph,
+li {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-color-300);
+  margin-bottom: 10px;
+}
+
+.cardcontentlist {
+  padding-left: 20px;
 }
 
 .link {
-    display: inline-block;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    text-decoration: none;
-    padding: 12px 24px;
-    background-color: var(--white-color);
-    border-radius: 100px;
-    color: var(--black-color);
-    font-weight: 600;
-    cursor: pointer;
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: var(--white-color);
+  border-radius: 100px;
+  color: var(--black-color);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .link:hover {
-    background-color: var(--gray-color-300);
+  background-color: var(--gray-color-300);
 }
 
 .mobilelinks {
-    pointer-events: none;
-    text-decoration: none;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .mobilenames {
-    display: none;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 12px;
-    text-decoration: none;
-    color: var(--black-color);
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 12px;
+  text-decoration: none;
+  color: var(--black-color);
 }
 
 @media (max-width: 1400px) {
-    .worksection {
-        padding: 96px 32px 48px 32px;
-    }
+  .worksection {
+    padding: 96px 32px 48px 32px;
+  }
 
-    .worksection h2 {
-        font-size: 72px;
-        margin-bottom: 80px;
-    }
+  .worksection h1 {
+    font-size: 72px;
+    margin-bottom: 80px;
+  }
 
-    .worksection__cards {
-        gap: 48px;
-    }
+  .worksection__cards {
+    gap: 48px;
+  }
 
-    .card {
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-    }
+  .worksection .card {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
 
-    img {
-        max-width: 100%;       
-    }
+  .worksection img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 810px) {
-    .worksection {
-        padding: 80px 20px 40px 20px;
-    }
+  .worksection {
+    padding: 80px 20px 40px 20px;
+  }
 
-    .worksection h2 {
-        font-size: 64px;
-        margin-bottom: 32px;
-    }
+  .worksection h1 {
+    font-size: 64px;
+    margin-bottom: 32px;
+  }
 
-    .worksection__cards {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
+  .worksection__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
-    .card {
-        border-radius: 0;
-    }
+  .worksection .card {
+    border-radius: 0;
+  }
 
-    img {
-        border-radius: 20px;
-    }
+  .worksection img {
+    border-radius: 20px;
+  }
 
-    .hovercontainer {
-        display: none;
-    }
+  .worksection .hovercontainer {
+    display: none;
+  }
 
-    .mobilelinks {
-        pointer-events: all;
-    }
+  .worksection .mobilelinks {
+    pointer-events: all;
+  }
 
-    .mobilenames {
-        display: block;
-    }
-
+  .worksection .mobilenames {
+    display: block;
+  }
 }

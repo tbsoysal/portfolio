@@ -12,14 +12,18 @@
   --gray-color-500: #667085;
   --gray-color-600: #475467;
   --gray-color-700: #344054;
-  --gray-color-800: #1D2939; 
+  --gray-color-800: #1D2939;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Inter Tight", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.activeHeading {
+  color: black !important;
 }
 
 html {
