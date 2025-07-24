@@ -51,7 +51,7 @@ header {
   list-style: none;
 }
 
-.header__menu li button {
+.header__menu li a {
   color: var(--black-color);
   font-size: 16px;
   font-weight: 600;
@@ -61,7 +61,7 @@ header {
   border: none;
 }
 
-.header__menu li button:hover {
+.header__menu li a:hover {
   color: var(--gray-color-500);
 }
 

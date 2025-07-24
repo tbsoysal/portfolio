@@ -1,5 +1,5 @@
 // change heading color on viewed sections
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.scroll-section');
 
 const options = {
   threshold: 0.4
@@ -18,16 +18,3 @@ const observer = new IntersectionObserver((entries) => {
 }, options);
 
 sections.forEach(section => observer.observe(section));
-
-
-// scroll to sections
-document.querySelectorAll('.scroll-link').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const id = link.dataset.target;
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
