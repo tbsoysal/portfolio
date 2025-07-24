@@ -1,21 +1,22 @@
 // change heading color on viewed sections
-const sections = document.querySelectorAll('.scroll-section');
-
-const options = {
-  threshold: 0.3
+if ('POLL_INTERVAL' in IntersectionObserver.prototype) {
+  IntersectionObserver.prototype.POLL_INTERVAL = 100;
 }
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+  entries.forEach(entry => {
     const heading = entry.target.querySelector('h1');
+    if (!heading) return;
 
     if (entry.isIntersecting) {
-      window.alert('active now!');
       heading.classList.add('activeHeading');
     } else {
       heading.classList.remove('activeHeading');
     }
   });
-}, options);
+}, { threshold: 0.1 });
 
-sections.forEach(section => observer.observe(section));
+document.querySelectorAll('.scroll-section').forEach(section => {
+  observer.observe(section);
+});
+
