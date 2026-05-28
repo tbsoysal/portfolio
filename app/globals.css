@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-satoshi: "Satoshi-Variable", sans-serif;
+  --font-jakartasans: "Plus Jakarta Sans", sans-serif;
+
+  --color-background: #ffffff;
+  --color-text-primary: #16132E;
+  --color-accent: #7F77DD;
+  --color-accent-dark: #3C3489;
+  --color-surface: #F5F4FE;
+  --color-text-secondary: #888780;
+}
