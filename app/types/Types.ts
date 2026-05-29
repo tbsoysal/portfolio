@@ -1,6 +1,6 @@
 export interface LinkLinks {
   github: string;
-  site: string;
+  site?: string;
 }
 
 export interface FAQItem {

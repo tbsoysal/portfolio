@@ -77,9 +77,11 @@ export default function ProjectsList() {
             <h2 className="font-satoshi text-accent text-2xl tracking-tight font-bold mb-5">Projects</h2>
 
         {
-            Projects.map((project) => (
-                <ProjectCard project={project} />
-            ))
+            Projects.map((item) => {
+                return (
+                    <ProjectCard key={item.title} project={item} />
+                )
+            })
         }
             
         </section>
