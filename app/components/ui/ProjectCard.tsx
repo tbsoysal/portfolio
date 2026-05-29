@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 className="w-full flex justify-between items-center text-left font-medium transition-colors"
                 type="button"
               >
-                <span>{qa.question}</span>
+                <span className="block pr-2">{qa.question}</span>
                 {/* Chevron Arrow Indicator */}
                 <Image src={iconsrc} alt="arrow icon" width={20} height={10} />
               </button>

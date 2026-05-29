@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-    <div className="flex flex-col items-center lg:flex-row lg:gap-6 relative my-18 justify-center">
+    <div className="flex flex-col items-center lg:flex-row lg:gap-6 relative my-12 justify-center">
         <div className="lg:max-w-[70%]">
         {/* Open to Work */}
         <div className="flex justify-center items-center gap-2 mb-8 md:mb-0 lg:absolute lg:-left-52 lg:top-62 lg:-rotate-90">
