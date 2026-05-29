@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className="h-full antialiased"
     >
-      <body className={`min-h-full flex flex-col ${plusjakartasans.className} bg-[#e5e5e5] p-8 md:p-12 lg:px-32 lg:py-12`}>
+      <body className={`min-h-full flex flex-col ${plusjakartasans.className} bg-[#e5e5e5] p-8 md:p-12 lg:px-20 lg:py-14 xl:px-32 xl:py-12 max-w-400 mx-auto`}>
         <Navbar />
         {children}
         <Footer />

@@ -14,15 +14,12 @@ interface ButtonProps {
 export default function Button({
   label,
   variant,
-  width = 131,
-  height = 35,
-  fontSize = 16,
   onClick,
   href,
   className = "",
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
+    "w-[131px] h-[35px] text-base md:w-[180px] md:h-[49px] inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
 
   const styles: Record<ButtonVariant, string> = {
     primary: "bg-accent text-background hover:bg-accent-dark",
@@ -30,18 +27,11 @@ export default function Button({
       "border border-text-primary text-text-primary bg-transparent hover:bg-text-primary hover:text-background",
   };
 
-  const inlineStyles = {
-    width: typeof width === "number" ? `${width}px` : width,
-    height: typeof height === "number" ? `${height}px` : height,
-    fontSize: typeof fontSize === "number" ? `${fontSize}px` : fontSize,
-  };
-
   if (href) {
     return (
       <a
         href={href}
         className={`${base} ${styles[variant]} ${className}`}
-        style={inlineStyles}
       >
         {label}
       </a>
@@ -52,7 +42,6 @@ export default function Button({
     <button
       onClick={onClick}
       className={`${base} ${styles[variant]} ${className}`}
-      style={inlineStyles}
     >
       {label}
     </button>

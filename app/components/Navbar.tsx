@@ -33,7 +33,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="font-satoshi text-text-primary font-semibold text-lg leading-none tracking-tight md:text-xl lg:text-5xl"
+          className="font-satoshi text-text-primary font-semibold text-lg leading-none tracking-tight md:text-xl lg:text-3xl"
         >
           Tahaberk Soysal
         </Link>
