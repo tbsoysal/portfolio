@@ -17,5 +17,11 @@ export interface ProjectItem {
   QA: FAQItem[];
 }
 
+export interface Skill {
+  icon: string;
+  label: string;
+}
+
 // Since your input was an array of these objects:
 export type ProjectList = ProjectItem[];
+export type SkillCardProps = Skill[];
