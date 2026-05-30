@@ -51,15 +51,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Accordion Q&A Section */}
-      <div className="space-y-3">
+      <div className="space-y-5">
         {project.QA.map((qa, index) => {
           const isOpen = openIndex === index;
           const iconsrc = isOpen ? "/images/arrow-opened.png" : "/images/arrow-closed.png";
 
           return (
+            <div key={index}>
+            {index !== 0 && <hr className="opacity-20 mb-4"/>}
             <div 
-              key={index} 
-              className="rounded-lg overflow-hidden"
+              className="overflow-hidden"
             >
               {/* Trigger Button */}
               <button
@@ -82,6 +83,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     {qa.answer}
                 </div>
               </div>
+            </div>
             </div>
           );
         })}
