@@ -5,9 +5,15 @@
   --font-jakartasans: "Plus Jakarta Sans", sans-serif;
 
   --color-background: #ffffff;
-  --color-text-primary: #16132E;
-  --color-accent: #7F77DD;
-  --color-accent-dark: #3C3489;
-  --color-surface: #F5F4FE;
+  --color-text-primary: #16132e;
+  --color-accent: #7f77dd;
+  --color-accent-dark: #3c3489;
+  --color-surface: #f5f4fe;
   --color-text-secondary: #888780;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }

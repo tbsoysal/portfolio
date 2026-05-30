@@ -22,6 +22,13 @@ export interface Skill {
   label: string;
 }
 
+export interface ContactLinkCardProps {
+  title: string;
+  handle: string;
+  buttonLabel: string;
+  href: string;
+}
+
 // Since your input was an array of these objects:
 export type ProjectList = ProjectItem[];
 export type SkillCardProps = Skill[];

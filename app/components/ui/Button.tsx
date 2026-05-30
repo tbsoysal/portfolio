@@ -19,7 +19,7 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const base =
-    "w-[131px] h-[35px] text-base md:w-[180px] md:h-[49px] inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
+    "min-w-[131px] h-[35px] text-base md:w-[180px] md:h-[49px] inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
 
   const styles: Record<ButtonVariant, string> = {
     primary: "bg-accent text-background hover:bg-accent-dark",
@@ -29,10 +29,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a
-        href={href}
-        className={`${base} ${styles[variant]} ${className}`}
-      >
+      <a href={href} className={`${base} ${styles[variant]} ${className}`}>
         {label}
       </a>
     );

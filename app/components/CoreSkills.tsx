@@ -48,9 +48,9 @@ export default function CoreSkills() {
     },
   ];
   return (
-    <section>
+    <section id="skills" className="my-8">
       <h2 className="font-satoshi text-accent text-2xl tracking-tight font-bold mb-5">
-        About me
+        Core skills
       </h2>
 
       <div className="grid grid-cols-4 gap-y-10">
