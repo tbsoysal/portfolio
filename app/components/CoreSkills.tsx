@@ -49,11 +49,11 @@ export default function CoreSkills() {
   ];
   return (
     <section id="skills" className="my-8">
-      <h2 className="font-satoshi text-accent text-2xl tracking-tight font-bold mb-5">
+      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold mb-5 md:mb-10">
         Core skills
       </h2>
 
-      <div className="grid grid-cols-4 gap-y-10">
+      <div className="grid grid-cols-4 max-w-3xl mx-auto gap-y-10">
         {Skills.map((skill, index) => {
           return <SkillCard key={index} {...skill} />;
         })}

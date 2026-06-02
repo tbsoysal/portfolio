@@ -29,13 +29,13 @@ export default function About() {
 
   return (
     <section id="about" className="my-8">
-      <h2 className="font-satoshi text-accent text-2xl tracking-tight font-bold mb-5">
+      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold mb-10">
         About me
       </h2>
 
       <div className="flex flex-col gap-5">
         {/* Top Location & Time Bar */}
-        <div className="w-full max-w-3xl bg-accent rounded-full px-6 py-3 flex justify-between items-center text-white text-sm font-medium shadow-sm">
+        <div className="bg-accent rounded-full px-6 py-3 md:py-5 md:px-7 lg:py-6 lg:px-8 flex justify-between items-center text-white text-sm font-medium shadow-sm">
           <div className="flex items-center gap-2">
             {/* Simple Inline Location Pin SVG */}
             <svg
@@ -58,7 +58,7 @@ export default function About() {
         </div>
 
         {/* Main Profile Card */}
-        <div className="w-full max-w-3xl bg-white rounded-4xl p-6 md:p-12 flex flex-col items-center text-center shadow-sm">
+        <div className="bg-white rounded-4xl p-6 md:p-12 flex flex-col items-center text-center shadow-sm">
           {/* Profile Image Container */}
           <div className="relative w-48 h-48 md:w-56 md:h-56 mb-6 overflow-hidden">
             <Image
@@ -80,10 +80,10 @@ export default function About() {
           </div>
 
           {/* Name and Title */}
-          <h1 className="font-satoshi text-3xl md:text-5.5xl font-bold tracking-tight text-text-primary mb-2">
+          <h1 className="font-satoshi text-3xl md:text-5xl font-bold tracking-tight text-text-primary mb-2">
             Tahaberk SOYSAL
           </h1>
-          <p className="font-satoshi text-2xl md:text-3xl text-text-primary mb-8 font-medium">
+          <p className="font-satoshi text-2xl md:text-4xl text-text-primary mb-8 font-medium">
             Front-end Developer
           </p>
 
@@ -100,7 +100,7 @@ export default function About() {
         </div>
 
         {/* Bio / Description Card */}
-        <div className="w-full max-w-3xl bg-white rounded-4xl p-6  md:p-10 flex flex-col gap-6 text-base md:text-lg leading-relaxed text-text-primary shadow-sm">
+        <div className="bg-white rounded-4xl p-6  md:p-10 flex flex-col gap-6 text-base md:text-lg leading-relaxed text-text-primary shadow-sm">
           <p>
             I'm a front-end developer based in Turkey, focused on building
             products that solve real problems — not just writing code that

@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Tahaberk Soysal" }],
   creator: "Tahaberk Soysal",
+  other: {
+    google: "notranslate",
+  },
   // Open Graph is how your site looks when shared on LinkedIn, X, or Discord
   openGraph: {
     type: "website",

@@ -1,15 +1,4 @@
-type ButtonVariant = "primary" | "secondary";
-
-interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  label: string;
-  variant: ButtonVariant;
-  width?: string | number;
-  height?: string | number;
-  fontSize?: string | number;
-  onClick?: () => void;
-  href?: string;
-  className?: string;
-}
+import { ButtonProps, ButtonVariant } from "@/app/types/Types";
 
 export default function Button({
   label,
@@ -20,7 +9,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "min-w-[131px] h-[35px] text-base md:w-[180px] md:h-[49px] inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
+    "min-w-[131px] h-[35px] text-base md:w-[150px] md:h-[39px] inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
 
   const styles: Record<ButtonVariant, string> = {
     primary: "bg-accent text-background hover:bg-accent-dark",

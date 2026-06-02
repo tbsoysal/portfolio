@@ -29,6 +29,19 @@ export interface ContactLinkCardProps {
   href: string;
 }
 
+export type ButtonVariant = "primary" | "secondary";
+
+export interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  label: string;
+  variant: ButtonVariant;
+  width?: string | number;
+  height?: string | number;
+  fontSize?: string | number;
+  onClick?: () => void;
+  href?: string;
+  className?: string;
+}
+
 // Since your input was an array of these objects:
 export type ProjectList = ProjectItem[];
 export type SkillCardProps = Skill[];
