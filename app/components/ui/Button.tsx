@@ -1,6 +1,6 @@
 type ButtonVariant = "primary" | "secondary";
 
-interface ButtonProps {
+interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   label: string;
   variant: ButtonVariant;
   width?: string | number;
@@ -17,6 +17,7 @@ export default function Button({
   onClick,
   href,
   className = "",
+  ...props
 }: ButtonProps) {
   const base =
     "min-w-[131px] h-[35px] text-base md:w-[180px] md:h-[49px] inline-flex items-center justify-center rounded-full font-normal transition-colors duration-200 whitespace-nowrap font-jakartasans";
@@ -29,7 +30,10 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={`${base} ${styles[variant]} ${className}`}>
+      <a
+        href={href}
+        className={`${base} ${styles[variant]} ${className} {...props}`}
+      >
         {label}
       </a>
     );

@@ -84,8 +84,7 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-text-secondary text-lg font-semibold py-4 leading-none transition-colors duration-200 hover:text-text-primary"
+              className="z-50 text-text-secondary text-lg font-semibold py-4 leading-none transition-colors duration-200 hover:text-text-primary"
             >
               {link.label}
             </Link>

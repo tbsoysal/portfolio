@@ -89,7 +89,12 @@ export default function About() {
 
           {/* Action Buttons */}
           <div className="flex sm:flex-row gap-2 w-full sm:w-auto justify-center">
-            <Button variant="primary" label="Download CV" />
+            <Button
+              variant="primary"
+              label="Download CV"
+              href="/01_tahaberk-resume.pdf"
+              download={"tahaberk-resume.pdf"}
+            />
             <Button variant="secondary" label="Contact me" href="#contact" />
           </div>
         </div>
