@@ -3,7 +3,7 @@ import ContactLinkCard from "./ui/ContactLinkCard";
 export default function Contact() {
   return (
     <section id="contact" className="my-8">
-      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold md:mb-10">
+      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold mb-10">
         Get in touch
       </h2>
 

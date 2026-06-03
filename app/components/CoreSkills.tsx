@@ -49,7 +49,7 @@ export default function CoreSkills() {
   ];
   return (
     <section id="skills" className="my-8">
-      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold mb-5 md:mb-10">
+      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold mb-10">
         Core skills
       </h2>
 

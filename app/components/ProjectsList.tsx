@@ -78,7 +78,7 @@ export default function ProjectsList() {
   ];
   return (
     <section id="projects" className="md:mb-20">
-      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold md:mb-10">
+      <h2 className="font-satoshi text-accent text-2xl md:text-[32px] lg:text-[48px] tracking-tight font-bold mb-10">
         Projects
       </h2>
 
